@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/400601918_661695292790256_6984578624472304481_n.png?stp=dst-png_p206x206&_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_eui2=AeG1Zhuod3_Kifht0D3Df-HWHAWTiWYPC9YcBZOJZg8L1uuG360NHEw811hAPdFnhghA9XDujRCGoDK4bm34LngH&_nc_ohc=iQ46voKjD7IAX-JdxEF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRH5eha6iX0wThODGUkt7ZUPAYeE3WNC_l53PDCd55-mA&oe=658A82DF" type="image/x-icon">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/glightbox js-css/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="./assests/css/js/termsCheck.js"></script>
+    <script src="./assests/css/js/preloader.js"></script>
+    <script src="./assests/css/js/pop.js"></script>
+    <script src="./assests/css/js/app.js"></script>
+    <title>DOT LINK</title>
+</head>
+<body>
+    
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg  navbar-gray menu shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.png" alt="logo image">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon d-block"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end links" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./get-started.html">ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./FAQ.html">FAQ</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+       <div class="">
+        <form class="box" role="search" action="./404.html" method="get">
+          <input class="search search-input express" type="search" placeholder="Search" aria-label="Search">
+          <a href="#" class="search-icon d-block">
+            <i class="fas fa-search text-black"></i>
+          </a>
+        </form>
+      </div>
+      
+  </div>
+      <!-- <button type="button" class="rounded-pill btn-rounded">+1 23456789
+        <span></span>
+      </button> -->
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- //preloader -->
+<section>
+  <div class="container d-">
+    <div id="preloader">
+      <div class="text-center">
+        <img src="./img/Untitled-1.png" alt="logo" class="logo-preloader">
+      </div>
+      <div id="loader">
+        <!-- <h4 class="loader-text"></h4> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Popup Ad -->
+<section>
+  <div class="container">
+    <div class="modal fade" id="popupAd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="popupAdLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-black" id="popupAdLabel">Special Offer!</h1>
+            <button type="button" class="btn-close" id="popupCloseBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">Don't miss out on our exclusive offer. Click <a class="text-capitalize" id="pop-link">here</a> to learn more.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="popupCloseBtndown" class="btn btn-primary text-white" data-bs-dismiss="modal">Go!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- terms and condition-->
+<section>
+  <div class="container">
+    <div class="modal fade" id="customModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-black" id="customModalLabel">Terms and Conditions</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text"> <input type="checkbox" id="acceptCheckbox" class=""> I have read and agree to abide by the <a class="text-capitalize" href="https://www.termsfeed.com/live/092d821f-6457-4422-a165-9acda6dc88c5">terms and conditions</a> outlined by this e-learning platform, acknowledging my commitment to comply with the specified policies and guidelines.</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal" onclick="acceptTerms()">Accept</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="home" class="intro-section">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      <!-- START THE CONTENT FOR THE INTRO  -->
+      <div class="col-md-6 intros text-start">
+        <h3 class="display-2">
+          <span class="display-2--intro">The <span class="text-black"><br> Contemporary</span>  <br> World</span>
+          <span class="display-2--description lh-base">
+            We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.
+            <br>-- "<b class="quote">Neil deGrasse Tyson</b>"
+          </span>
+        </h3>
+        <!-- <button type="button" class="rounded-pill btn-rounded">Get in Touch
+          <span><i class="fas fa-arrow-right"></i></span>
+        </button> -->
+      </div>
+
+      <div class="col-md-6 intros text-end">
+        <div class="video-box">
+          <img src="./img/content-home/intro white.png" class="img-fluid img-thumbnai rounded" alt="18+ image">
+          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+            <span>
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span class="border-animation border-animation--border-1"></span>
+            <span class="border-animation border-animation--border-2"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+
+<!-- social-media links -->
+<!-- <section id="social-media" class="social-media">
+  <div class="container">
+    <div class="row">
+      <h4 class="fw-bold lead mb-1.5 text-center">
+        Social Media
+      </h4>
+      <div class="heading-line mb-3"></div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <div class="social-media-links__logo-box shadow-sm">
+          <img src="./images/campany-2.png" alt="social-media" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <div class="social-media-links__logo-box shadow-sm">
+          <img src="./images/campany-4.png" alt="social-media" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <div class="col-md-4 social-media-links__logo-box shadow-sm">
+          <img src="./images/campany-6.png" alt="social-media" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- content title -->
+
+<section class="container config-pb">
+    <div class="row  text-center">
+      <h3 class="display-3 fw-bold mt-3">About <span class="orange">Contemporary</span>
+        World</h3>
+      <h3 class="heading-line mb-1"></h3>
+    </div>
+
+<!-- content description -->
+  <div class="row pt-0 mt-0 mb-3">
+    <div class="col-md-6 border-right">
+      <div class="bg-white p-3">
+        <h2 class="fw-bold text-capitalize text-center text-descrip">
+          Refers to circumstances and ideas of the present age, where it deals with problems and issues related to environment, population, wealth, power, tensions and conflicts
+        </h2>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="bg-white p-4">
+        <p class="fw-light text-center text-main"> The term "contemporary world" refers to the current time period, encompassing the present age and the events, trends, 
+          and circumstances that characterize it. It generally encompasses the social, political, economic, and cultural aspects of the world as it exists today. This includes issues and developments related to the environment, population, wealth, power, tensions, and conflicts, which you mentioned earlier. It's a broad term that can cover a wide range of topics and concerns that are relevant in today's global context. If you have any specific questions about contemporary world issues or if there's a particular aspect you're interested in, feel free to let me know!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- START THE CONTENT FOR THE FEATURES -->
+  <div class="container">
+    <!-- FEATURES CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 features mt-4">
+        <div class="features__content">
+          <div class="icon d-block fas fa-hand-fist"></div>
+          <h3 class="display-3--title mt-1">Nation Building</h3>
+          <p class="lh-lg">global knowledge sharing, technological advancements, and economic opportunities through international trade and investment.
+             Cultural exchange enriches societies, while environmental awareness fosters collaborative efforts. 
+             Political alliances provide stability, and improved healthcare, education, and infrastructure contribute to overall development.</p>
+             <!-- <button type="button" class="rounded-pill btn-rounded border-primary">Learn More
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button> -->
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 features mt-4 text-end">
+        <div class="features__img">
+          <img src="./img/content-home/nation build.png" alt="Sercure Browsing" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <!-- OTHER FEATURES CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 features mt-4 text-start">
+        <div class="features__img">
+          <img src="./img/content-home/progress.png" alt="Fast Browsing" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 features mt-4">
+        <div class="features__content">
+          <div class="icon d-block fas fa-forward"></div>
+          <h3 class="display-3--title mt-1">Progress</h3>
+          <p class="lh-lg"> rapid advancements in technology, improved living standards, and increased access to education and healthcare.
+             Globalization has opened up new economic opportunities and facilitated cross-cultural exchange. Environmental awareness has led to sustainable practices and efforts to combat climate change.
+             Political cooperation and alliances contribute to stability and security. </p>
+             <!-- <button type="button" class="rounded-pill btn-rounded border-primary">Learn More
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button> -->
+      </div>
+    </div>
+    <!-- FUTURE UPDATES FEATURE'S CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 features mt-4">
+        <div class="features__content">
+          <div class="icon d-block d-block fas fa-universal-access"></div>
+          <h3 class="display-3--title mt-1">Social Structure</h3>
+          <p class="lh-lg">
+            Social structures vary widely, encompassing urban and rural settings, and range from highly industrialized to more traditional or agrarian. 
+            There is an increasing emphasis on issues of equality, inclusivity, and social justice, with ongoing discussions about gender rights, racial and ethnic diversity.
+          </p>
+          <!-- <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button> -->
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 features mt-4 text-end">
+        <div class="features__img">
+          <img src="./img/content-home/social structure.png" alt="cloud hosting illustration" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+ 
+<!-- below has a bug -->
+  <section id="feedback" class="feedback">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,234.7C384,245,480,267,576,256C672,245,768,203,864,186.7C960,171,1056,181,1152,202.7C1248,224,1344,256,1392,272L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>    
+      <div class="text-center text-white">
+        <h1 class="display-3 fw-bold">Testimonials</h1>
+        <hr style="width: 100px; height: 5px; background-color: black;" class="mx-auto">
+        <p class="lead d-md-block d-lg-block d-sm-flex">Says of the professionals to the contemporary World</p>
+      </div>
+      
+      <!-- Carousel for the sample's of feedback -->
+    <div class="row container mx-auto">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- CAROUSEL ITEM 1 -->
+          <div class="carousel-item active">
+            <!-- feedback__content card  -->
+            <div class="feedback__content">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                In the contemporary world, we think of politeness as surface behavior, like frosting - it's sweet and attractive and finishes off the cake. But 19th century nobility and the enlightened thinkers and stoics before them viewed manners in a very different way. To them, manners are an outward expression of an inward struggle.
+                <i class="fas fa-quote-right"></i>
+                <!-- <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div> -->
+              </p>
+            </div>
+            <!-- client picture  -->
+            <div class="feedback__picture">
+              <img src="./img/people in feedback/amor (1).jpg" alt="client-1 picture" class="rounded-circle img-fluid">
+            </div>
+            <!-- client name & role  -->
+            <div class="feedback__name">
+              <h3>Amor Towles</h3>
+              <p class="fw-light">American novelist</p>
+            </div>
+          </div>     
+          <!-- CAROUSEL ITEM 2 -->
+          <div class="carousel-item">
+            <!-- feedback__content card  -->
+            <div class="feedback__content">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                As a nation we have the right to decide our own affairs, to mould our own future. This does not pose any danger to anybody. Our nation is fully aware of the responsibility for its own fate in the complicated situation of the contemporary world.
+                <i class="fas fa-quote-right"></i>
+                <!-- <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div> -->
+              </p>
+            </div>
+            <!-- client picture  -->
+            <div class="feedback__picture">
+              <img src="./img/people in feedback/Lech_Wałęsa (1).jpg" alt="client-2 picture" class="rounded-circle img-fluid">
+            </div>
+            <!-- client name & role  -->
+            <div class="feedback__name">
+              <h3>Lech Wałęsa</h3>
+              <p class="fw-light"> President of Poland between 1990 and 1995</p>
+            </div>
+          </div>     
+          <!-- CAROUSEL ITEM 3 -->
+          <div class="carousel-item">
+            <!-- feedback__content card  -->
+            <div class="feedback__content">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                The thing is, we live in a contemporary world, and being able to make yourself the best person you can possible be can be difficult. But as long as you're trying to figure it out, and you're really looking in the right direction, everything's going to be all right.
+                <i class="fas fa-quote-right"></i>
+                <!-- <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div> -->
+              </p>
+            </div>
+            <!-- client picture  -->
+            <div class="feedback__picture">
+              <img src="./img/people in feedback/Andie MacDowell (1).jpg" alt="client-3 picture" class="rounded-circle img-fluid">
+            </div>
+            <!-- client name & role  -->
+            <div class="feedback__name">
+              <h3>Andie MacDowell</h3>
+              <p class="fw-light">American actress</p>
+            </div>
+          </div>     
+        </div>
+
+        <!-- optional t if you want the user has a capable to navifate the people who have expeterties  -->
+        <!-- <div class="text-center">
+          <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        </button>
+        <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        </button>
+        </div> -->
+      </div>
+     </div>
+    </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,234.7C384,245,480,267,576,256C672,245,768,203,864,186.7C960,171,1056,181,1152,202.7C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>  </section>
+</section>
+<!-- above has a bug -->
+<!-- FAQ section -->
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold text-capitalize">FAQ about <span class="orange">Contemporary</span></h1>
+      <h1 class="heading-line"></h1>
+      <p class="lead">Frequently asked questions, </p>
+    </div>
+   <!-- Accordion content -->
+   <div class="row mt-5">
+    <div class="col-md 12">
+      <div class="accordion" id="accordionExample">
+        <!-- ACCORDION ITEM no.1 -->
+        <div class="accordion-item shadow mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What are the major environmental challenges in the contemporary world?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Major environmental challenges</strong> in the contemporary world include climate change, deforestation, pollution (air, water, and soil), loss of biodiversity, and depletion of natural resources.
+            </div>
+          </div>
+        </div>
+        <!-- ACCORDION ITEM no.2 -->
+        <div class="accordion-item shadow mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How does globalization impact economies in the contemporary world?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Globalization impacts</strong> economies by increasing international trade, facilitating foreign investments, and creating opportunities for economic growth. However, it can also lead to challenges such as economic inequality and vulnerability to global economic shocks.
+            </div>
+          </div>
+        </div>
+        <!-- ACCORDION ITEM no.3 -->
+        <div class="accordion-item shadow mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What are the key geopolitical tensions and conflicts in the contemporary world?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Key geopolitical tensions</strong> in the contemporary world include territorial disputes, trade conflicts, ideological differences, and regional power struggles. Examples include the tensions in the South China Sea and conflicts in the Middle East.
+            </div>
+          </div>
+        </div>
+        <!-- ACCORDION ITEM no.4 -->
+        <div class="accordion-item shadow mb-4">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What are the social and cultural impacts of migration in the contemporary world?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Migration</strong> in the contemporary world has led to cultural diversity and enriched societies with new perspectives. It can also pose challenges related to integration, social cohesion, and issues of identity and belonging.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- content for the contact phone -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="" class="contact-box__info--title">+63 1234567890</a>
+          <p class="contact-box__info--subtitle text-capitalize "> Mon-Fri 8:00am-5:00pm</p>
+        </div>
+      </div>
+      <!-- content for the contact email -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10 14l11 -11" />
+            <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="" class="contact-box__info--title">GoogleAccount</a>
+          <p class="contact-box__info--subtitle text-capitalize ">online support</p>
+        </div>
+      </div>
+      <!-- content for the contact address -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-search" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v8" />
+            <path d="M9 4v13" />
+            <path d="M15 7v5" />
+            <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M20.2 20.2l1.8 1.8" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="" class="contact-box__info--title">Philipines</a>
+          <p class="contact-box__info--subtitle text-capitalize ">Location</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- social -->
+  <div class="footer-sociam" style="background-color: #212121;">
+    <div class="container">
+      <div class="row py-4 text-center">
+        <div class="col-lg-5 col-md-6 mb-md-0 text-white">
+          Connect with us on social media
+        </div>
+        <div class="col-lg-7 col-md-6 mb-7">
+          <a href="./404.html">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="./404.html">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="./404.html">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="./404.html">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start content with the company info -->
+  <div class="container mt-4">
+    <div class="row text-white justify-content-center mt-3 pb-3">
+      <div class="col-12 col-sm-6 col-lg-6">
+        <h5 class="text-capitalize fw-bold">DOT LINK</h5>
+        <hr class="bg-white display-inline-block mb-4" style="width: 100px; height: 2px;">
+        <p class="lh-lg">
+          DOT LINK is a dynamic and innovative tech company specializing in creating cutting-edge dynamic websites, robust programming solutions, efficient databases, and other related frontend services. With a team of skilled professionals, we harness the power of technology to bring your ideas to life, ensuring a seamless and user-friendly experience for your audience. 
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">Services</h5>
+        <hr class="bg-white display-inline-block mb-4" style="width: 100px; height: 2px;">
+        <ul class="list-line company-list">
+          <li><a href="#">
+            Website App
+          </a></li>
+          <li><a href="#">
+            Programming
+          </a></li>
+          <li><a href="#">
+            DataBase
+          </a></li>
+          <li><a href="#">
+            ETC..
+          </a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">Information</h5>
+        <hr class="bg-white display-inline-block mb-4" style="width: 100px; height: 2px;">
+        <ul class="list-line company-list">
+          <li><a href="#">
+            Your information
+          </a></li>
+          <li><a href="#">
+            well be helpful
+          </a></li>
+          <li><a href="#">
+            For us
+          </a></li>
+          <li><a href="#">
+            :)
+          </a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">Contact</h5>
+        <hr class="bg-white display-inline-block mb-4" style="width: 100px; height: 2px;">
+        <ul class="list-line company-list">
+          <li><a href="#">
+            GoogleAccount
+          </a></li>
+          <!-- you can add another links your contact -->
+          <!-- <li><a href="#">
+            GoogleAccount
+          </a></li>
+          <li><a href="#">
+            GoogleAccount
+          </a></li>
+          <li><a href="#">
+            GoogleAccount
+          </a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- copyright footer -->
+  <div class="footer-last pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12">
+          <div class="footer-last__copy">
+            &COPY;Copyright 2023 Company | Created by <a href="#">kate De leon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP BUTTON  -->
+<section class="sectionarrow">
+  <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+</section>  
+
+
+    <script src="./assests/glightbox js-css/js/glightbox.min.js"></script>
+    <script src="./assests/css/js/videohome.js"></script>
+    <script src="./assests/css/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/1bcdea6025.js" crossorigin="anonymous"></script>
+    <script src="./assests/css/js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      
+    <!-- under development for the search input -->
+    <!-- <script>
+      // const searchicon d-block = document.querySelector('.search-icon d-block');
+      // const searchInput = document.querySelector('.search-input');
+
+      // searchicon d-block.addEventListener('click', function(event) {
+      //   event.preventDefault();
+      //   searchInput.classList.toggle('active');
+      //   if (searchInput.classList.contains('active')) {
+      //     searchInput.focus();
+      //   } else {
+      //     searchInput.blur();
+      //   }
+      // });
+    </script> -->
+</body>
+</html>
